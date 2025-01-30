@@ -7,8 +7,6 @@ import WebBlock1 from "../assets/img/WebBlock1.jpg"
 import WebBlock2 from "../assets/img/WebBlock2.jpg"
 import WebBlock3 from "../assets/img/WebBlock3.jpg"
 import WebBlock4 from "../assets/img/WebBlock4.jpg"
-import waves from "../assets/img/waves.png"
-import waves1 from "../assets/img/waves1.png"
 
 function Home() {
     const [openAccordion, setOpenAccordion] = useState(null);
@@ -227,11 +225,11 @@ function Home() {
                                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                                         Der Bioalpine-Unterschied
                                     </h1>
-                                    <p className="text-base sm:text-lg text-gray-600 max-w-xl">
+                                    <p className="text-base text-[#6b7280] sm:text-lg text-gray-600 max-w-xl">
                                         Umgeben von hohen Bergen, kristallklaren Seen, Flüssen und frischer, sauberer Luft grasen Kühe auf saftigen Almenwiesen inmitten von Hunderten verschiedener Kräuter und Gräser, die anderswo nur selten zu finden sind. Dies ist ein hervorragendes Futter für gesunde Kühe und die Grundlage für die außergewöhnliche Qualität und den legendären Geschmack unserer Molkenproteine.
                                     </p>
                                     <div className="flex flex-wrap gap-4">
-                                        <button className="bg-[#ec4755] hover:bg-[#f27c86] text-white px-6 sm:px-8 py-3 rounded-md transition-colors flex items-center gap-2 text-sm sm:text-base">
+                                        <button className="bg-[#ec4755] hover:bg-[#ea3545] text-white font-semibold px-6 sm:px-8 py-3 rounded-md transition-colors flex items-center gap-2 text-sm sm:text-base">
                                             Mehr erfahren
                                             <MdOutlineArrowRightAlt className="text-xl" />
                                         </button>
@@ -261,15 +259,15 @@ function Home() {
                     <p className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-gray-800 mt-12">
                         Steigen Sie auf Bio um.
                     </p>
-                    <p className="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto px-4 my-4">
+                    <p className="text-base text-[#6b7280] sm:text-lg text-gray-600 max-w-4xl mx-auto px-4 my-4">
                         Umgeben von hohen Bergen, kristallklaren Seen, Flüssen und frischer, sauberer Luft grasen Kühe auf saftigen Almenwiesen inmitten von Hunderten verschiedener Kräuter und Gräser, die anderswo nur selten zu finden sind. Dies ist ein hervorragendes Futter für gesunde Kühe und die Grundlage für die außergewöhnliche Qualität und den legendären Geschmack unserer Molkenproteine.
                     </p>
-                    <div className="flex justify-center items-center">
+                    {/* <div className="flex justify-center items-center">
                         <div className="bg-[#ec4755] flex justify-center items-center text-white font-semibold rounded-full px-4 sm:px-6 py-2 sm:py-3 space-x-2 my-4 sm:my-6 hover:bg-[#f27c86] transition-colors">
                             <button className="text-sm sm:text-base">MEHR ERFAHREN</button>
                             <MdOutlineArrowRightAlt className="text-xl sm:text-2xl" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div>
@@ -396,7 +394,6 @@ function Home() {
                         ))}
                     </div>
                 </div>
-
             </div>
             <Footer />
         </div>
