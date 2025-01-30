@@ -56,7 +56,7 @@ function Faq() {
 
     return (
         <div className="min-h-screen px-4 md:px-8 lg:px-16">
-            {/* <Header /> */}
+            <Header />
             <div className="container mx-auto py-8 space-y-12">
                 {/* Top FAQ Section */}
                 <div className="flex flex-col md:flex-row items-start justify-between">
