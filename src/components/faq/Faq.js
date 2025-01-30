@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Header from "../../pages/Header";
 import Footer from "../../pages/Footer";
-import wheyProtein from "../assets/images/wheyProtein.jpeg"
-import furnishProtein from "../assets/images/furnishProtein.jpg"
-import landscapimage from "../assets/images/landscapImage.jpg"
-import manwoman from "../assets/images/manwoman.jpg"
-import coffee from "../assets/images/coffee.jpg"
-import honeyspoon from "../assets/images/honey-spoon.jpg"
-import shake from "../assets/images/shake.jpg"
-import lendingcow from "../assets/images/lendingcow.jpg"
-import doctor from "../assets/images/doctor.jpg"
+import wheyProtein from "../../assets/images/wheyProtein.jpeg"
+import furnishProtein from "../../assets/images/furnishProtein.jpg"
+import landscapimage from "../../assets/images/landscapImage.jpg"
+import manwoman from "../../assets/images/manwoman.jpg"
+import coffee from "../../assets/images/coffee.jpg"
+import honeyspoon from "../../assets/images/honey-spoon.jpg"
+import shake from "../../assets/images/shake.jpg"
+import lendingcow from "../../assets/images/lendingcow.jpg"
+import doctor from "../../assets/images/doctor.jpg"
 function Faq() {
     const [openIndex, setOpenIndex] = useState(0);
 
@@ -527,7 +527,7 @@ function Faq() {
                 {/* Zusatzstoffe section */}
                 <div className="w-full mt-16">
                     {/* Dotted Line */}
-                    <div className="border-t-2 border-orange-500 border-dashed w-full mb-8"></div>
+                    <div className="border-t-2  border-[#EC4755] border-dashed w-full mb-8"></div>
 
                     {/* Bio Title */}
                     <div className="text-center mb-8">
@@ -584,7 +584,7 @@ function Faq() {
                 {/* BioAlpine vs. Konkurrenz section */}
                 <div className="w-full mt-16">
                     {/* Dotted Line */}
-                    <div className="border-t-2 border-orange-500 border-dashed w-full mb-8"></div>
+                    <div className="border-t-2  border-[#EC4755] border-dashed w-full mb-8"></div>
 
                     {/* Bio Title */}
                     <div className="text-center mb-8">
@@ -638,7 +638,7 @@ function Faq() {
                     ))}
                 </div>
                 {/* Dotted Line */}
-                <div className="border-t-2 border-orange-500 border-dashed w-full mb-8"></div>
+                <div className="border-t-2 border-[#EC4755] border-dashed w-full mb-8"></div>
 
                 <div>
                     <h2 className="text-3xl font-bold text-[#EC4755]">
