@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../assets/img/logo.png";
-import { VscSearch } from "react-icons/vsc";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,23 +10,18 @@ function Header() {
 
     return (
         <header>
-            <div className="top-bar  text-white px-12 pt-5 flex justify-between items-center text-sm">
+            <div className="top-bar text-white px-12 py-2 flex justify-center items-center text-sm">
                 <div className="contact-info flex gap-1 xl:flex-row lg:flex-row md:flex-col max-sm:flex-col sm:flex-col text-center max-sm:text-center md:text-left">
-                    <a href="tel:+4915217208524" className="text-white">
+                    <a href="tel:+4915217208524" className="text-black">
                         WhatsApp +49 1521 7208524
                     </a>
-                    <a href="mailto:info@bioalpine.de" className="text-white">
+                    <a href="mailto:info@bioalpine.de" className="text-black">
                         info@bioalpine.de
                     </a>
                 </div>
-
-                <div className="cart flex items-center gap-1 hidden lg:flex">
-                    <span>0 items</span>
-                </div>
             </div>
-            <nav className="main-nav bg-white border-gray-200">
-                <div className="nav-content max-w-screen-lg h-10 flex items-center justify-start px-5 relative">
-                    {/* Navigation Links */}
+            <nav className="bg-[#f4f4f4] border-gray-200">
+                <div className="nav-content max-w-screen-lg h-10 flex items-center item-center flex justify-center px-5 relative">
                     <div className="hidden lg:flex items-center gap-2">
                         <a href="/" className="logo mx-10">
                             <img src={logo} alt="BioAlpine" className="h-20 w-48" />
@@ -44,16 +38,15 @@ function Header() {
                         >
                             About us
                         </a>
-
                         <a
                             href="/faq"
-                            className="nav-link text-gray-500 text-base font-medium duration-300 hover:text-black font-semibold px-1.5 py-1 hover:underline hover:decoration-red-500 hover:decoration-2 hover:underline-offset-4"
+                            className="nav-link text-gray-800 text-base font-medium duration-300 hover:text-black font-semibold px-1.5 py-1 hover:underline hover:decoration-red-500 hover:decoration-2 hover:underline-offset-4"
                         >
                             FAQ's
                         </a>
                         <a
                             href="/contact"
-                            className="nav-link text-gray-500 text-base font-medium duration-300 hover:text-black font-semibold px-1.5 py-1 hover:underline hover:decoration-red-500 hover:decoration-2 hover:underline-offset-4"
+                            className="nav-link text-gray-800 text-base font-medium duration-300 hover:text-black font-semibold px-1.5 py-1 hover:underline hover:decoration-red-500 hover:decoration-2 hover:underline-offset-4"
                         >
                             Contact Us
                         </a>
@@ -112,10 +105,9 @@ function Header() {
                     >
                         Product
                     </a>
-
-                </div>
-            </nav>
-        </header>
+                </div >
+            </nav >
+        </header >
     );
 }
 
