@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "../pages/Header";
-import Footer from "../pages/Footer";
+import Header from "../../pages/Header";
+import Footer from "../../pages/Footer";
 import wheyProtein from "../assets/images/wheyProtein.jpeg"
 import furnishProtein from "../assets/images/furnishProtein.jpg"
 import landscapimage from "../assets/images/landscapImage.jpg"
@@ -639,6 +639,17 @@ function Faq() {
                 </div>
                 {/* Dotted Line */}
                 <div className="border-t-2 border-orange-500 border-dashed w-full mb-8"></div>
+
+                <div>
+                    <h2 className="text-3xl font-bold text-[#EC4755]">
+                        Haben Sie weitere Fragen?
+                    </h2>
+                    <p className="text-[#4B5563] font-bold">Gerne helfen wir Ihnen weiter.</p>
+
+                    <button className="hover:bg-gray-600 text-white px-8 py-4 rounded-lg bg-[#EC4755] transition-colors w-fit text-lg">
+                            Fragen Sie uns !
+                        </button>
+                </div>
             </div>
             <Footer />
         </div>
