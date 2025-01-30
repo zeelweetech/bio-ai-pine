@@ -12,7 +12,6 @@ import waves1 from "../assets/img/waves1.png"
 
 function Home() {
     const [openAccordion, setOpenAccordion] = useState(null);
-    const [activeFeature, setActiveFeature] = useState(0);
 
     const toggleAccordion = (index) => {
         setOpenAccordion(openAccordion === index ? null : index);
@@ -22,9 +21,9 @@ function Home() {
         {
             question: "What does BioAlpine® stand for?",
             answer: (
-                <>
+                <div className="text-start">
                     The word <span className="font-bold">BIO</span> means organic and <span className="font-bold">ALPINE</span> refers to the origin of our whey protein which is exclusively in the alpine region of Germany and Austria. We source our pure and organic whey protein concentrate from the Alpine region which has the cleanest air, water, and soil available, where every cow has a name. Animal Welfare and caring for the cows are the primary concerns. Nearly 90% of cows enjoy regular access to the pasture and feed on perennial grasses, sedges, forbs, cushion plants, mosses, lichens, and other medicinal plants or spend an entire day in an exercise yard, ensuring that the protein you receive from the milk has the greatest possible combination of all the components.
-                </>
+                </div>
             )
         },
         {
@@ -35,43 +34,130 @@ function Home() {
             question: "How do you identify the organic whey protein?",
             answer: "Our Organic whey proteins are identified by the green EU Organic label. For further information on the same, please visit the official website of the European Commission – Agriculture and Rural Development. You can also find our company's organic certificate on the website under the 'Quality' page."
         },
-    ];
-
-    const featureContent = [
         {
-            title: "Gesundheit zuerst",
-            description: "Hören Sie auf, Ihren Körper zu vergiften, denn er ist der einzige Ort, an dem Sie leben können.",
-            image: WebBlock1,
-            overlayTitle: "Gesundheit zuerst",
-            overlayText: "Keine giftigen Schwermetalle, GVO, exogenen Hormone, Antibiotika, synthetischen Süßstoffe, Aromen, Farbstoffe und Konservierungsmittel, die mit zahlreichen Krankheiten in Verbindung gebracht werden, darunter (aber nicht beschränkt auf) Magen-Darm- und Nierenfunktionsstörungen, Wachstumsstörungen, Diabetes, Krebs, Herz-Kreislauf-Erkrankungen, Erkrankungen des Nervensystems, Hautläsionen, Gefäßschäden, Funktionsstörungen des Immunsystems und Geburtsfehler."
+            question: "What does it mean to be Organic?",
+            answer: (
+                <div className="text-start">
+                    <p>In the case of whey protein, for the product to be called ORGANIC, certain parameters are established which start right from the cellular level. They are as follows:</p>
+                    <p className="py-3"><span className="font-semibold">Non-GMO feed:</span>The cows are raised on 100% organic feeds that have been grown without the use of synthetic pesticides, chemical fertilizers, and genetically modified organisms (GMOs). At least 60% of the feed should consist of roughage: Hay or silage in winter and green forage in summer. During the summer season, cows are provided unrestricted access to pasture vegetation, predominantly comprising low grasses (50%), tall grasses (30%), and legumes (10–20%).</p>
+                    <p ><span className="font-semibold">Free-Range:</span>Cows are often pasture-fed for more than 180 days during which they have access to outdoor spaces where they can roam freely and engage in natural behaviors, rather than being confined to a barn or feedlot.</p>
+                    <p className="py-3"><span className="font-semibold">No Growth Hormones:</span>It restricts the use of synthetic medications including hormones like recombinant bovine growth hormone (rBGH) and recombinant bovine somatotropin (rBST). No Antibiotics: Excessive use of antibiotics and steroids to treat the sick animal is prohibited.</p>
+                    <p ><span className="font-semibold">Animal welfare:</span>Cows on organic farms spend at least 120 days per year on pasture, where they graze on nutritious pasture plants, exercise, and socialize. When inside, organic cows enjoy clean, dry bedding and appropriate temperatures and breathe well-ventilated and circulated air. This reduces the stress levels in animals and improves the milk quality.</p>
+                    <p className="py-3"><span className="font-semibold">Ecological:</span>Pasture-based systems in organic farming have been shown to produce lower greenhouse gas emissions, including methane (CH4) and carbon dioxide (CO2).</p>
+                    <p ><span className="font-semibold">Sustainable:</span>In Organic milk farming, the number of cows per farm is limited so less amount of land, water, and food resources are used as compared to conventional farming and as a result lower carbon footprint. This makes Organic protein more sustainable.</p>
+                </div>
+            )
         },
         {
-            title: "Erleben Sie Perfektion",
-            description: "Wann traf Totalität zuletzt auf Wirksamkeit und Reinheit?",
-            image: WebBlock2,
-            overlayTitle: "Erleben Sie Perfektion",
-            overlayText: "Mittels Niedertemperatur-Mikrofiltration und Ultrafiltration wird hochwertiges organisches Molkenprotein in voll funktionsfähiger Form isoliert, das auf natürliche Weise ein vollständiges Profil an essentiellen Aminosäuren und wichtigen Fraktionen wie β-Lactoglobulin (β-Lg), α-Lactalbumin (α-La), Immunglobulinen (Igs), Lactoferrin (LF), Rinderserumalbumin (BSA) und Lactoperoxidase (LP) in perfekten Verhältnissen enthält, um Ihr Muskelwachstum, Ihren Fettabbau oder einfach eine gesündere Lebensweise zu unterstützen."
+            question: "What makes Organic whey protein expensive as compared to the conventional proteins?",
+            answer: (
+                <div>
+                    The expensive nature of Organic whey proteins is due to the <span className="font-semibold">high production and operational costs</span> incurred for feed, labor, animal welfare, and maintenance because it must adhere to strict organic standards. Because organic milk farming prohibits the use of artificial growth hormones and antibiotics, the <span className="font-semibold">milk yield is low</span> as compared to conventional milk farming, leading to high costs. While emphasizing environmentally <span className="font-semibold">sustainable practices</span> for protecting biodiversity in organic milk farming, more resources in terms of time and money are required. The companies that produce organic milk spend a lot of money on <span className="font-semibold">organic certification</span> fees, inspections, and compliance with regulations. Since the supply is limited and <span className="font-semibold">consumer demand</span> is increasing due to the increased awareness about organic products and health, this hypes up the organic whey protein prices.
+                </div>
+            )
         },
         {
-            title: "Köstliche Bio-Aromen",
-            description: "Die köstlichste Geschmacksvielfalt aller Bio-Molkeproteine – Punkt!",
-            image: WebBlock3,
-            overlayTitle: "Köstliche Bio-Aromen",
-            overlayText: "BioAlpine® lädt Sie zu einem ganz eigenen Geschmackserlebnis ein, indem es das jahrhundertealte Geschmackserbe des biologischen Kaffees, Kakaos, der Vanille und der Superfrüchte dieser Welt nachbildet."
+            question: "What makes Organic different in terms of quality?",
+            answer: (
+                <div className="text-start">
+                    <p className="py-3"><span className="font-semibold">Low SCC:</span>Somatic cell count (SCC) is the most significant parameter of cow health. SCC surpassing 4,00,000 cells per ml signifies gland inflammation and thus the low quality of milk and a high chance of infections. Organic milk typically has an <span className="font-semibold">SCC of 1,00,000</span> cells per ml or even less.</p>
+                    <p ><span className="font-semibold">Better nutritional profile:</span>Organic milk contains high levels of retinol and beta-carotene acting as a precursor for <span className="font-semibold">vitamin A.</span> It also has a higher concentration of <span className="font-semibold">vitamin E</span> essential to prevent oxidative damage in cells and conjugated linoleic acid (<span className="font-semibold">CLA</span>), a heart-healthy fatty acid for cardiovascular health. Additionally, spending more time at pastures induces the synthesis of <span className="font-semibold">vitamin D3</span> from 7-dehydrosterol by UV rays which is essential for calcium and phosphorus metabolism for teeth and bone mineralization.</p>
+                    <p className="py-3"><span className="font-semibold">No Heavy metals:</span>The heavy metals (lead, chromium, mercury, cadmium) that cause toxic effects even at lower concentrations are absent in organic milk due to the prohibited use of fertilizers and antibiotics.</p>
+                    <p ><span className="font-semibold">Better taste profile:</span>Organic protein has a better, unique, and clean taste profile due to the green agricultural practices followed during production and processing. It has a creamier texture and greater ‘grass’ flavour notes.</p>
+                </div>
+            )
         },
         {
-            title: "Funktionale Dominanz",
-            description: "Wenn Nahrung Medizin ist, ist dies die einzige Molke, die Sie jemals brauchen werden!",
-            image: WebBlock4,
-            overlayTitle: "Funktionale Dominanz",
-            overlayText: "Durch die Zugabe von Bio-Kaffee, Kakao, Vanilleextrakten und gefriergetrockneten Fruchtpulvern als Geschmacksstoffe sind unsere Proteinpulver auf natürliche Weise mit den wirksamsten der Menschheit bekannten Phytochemikalien und Antioxidantien angereichert, sodass Sie Ihre Gesundheit voll und ganz kontrollieren können."
-        }
+            question: "Why GMOs are bad?",
+            answer: "GMOs are responsible for Antibiotic Resistance (AR). The antibacterial resistance genes of the GMOs are resistant to antibiotics which could pass on to humans making them antibiotic-resistant and thus becoming more prone to infections. Also, if these genes are taken up by the disease-causing microbes in the human intestine, cause diseases that cannot be treated with existing antibiotics. GMOs have the potential to trigger allergic reactions as they contain genes from an allergen. Glyphosate is a major GMO that impairs the cytochrome P450 enzymes and as a result, causes celiac disease. GMOs have also given rise to pesticide-resistant superweeds which require even more toxic pesticides to kill and even then, they survive the new pesticides and pass their resistant genes to the next generation."
+        },
+        {
+            question: "What is SCC or Somatic cell count and how it affects the milk quality?",
+            answer: (
+                <div>
+                    <p>Somatic cell count is the ultimate milk quality parameter. Somatic cells are milk-secreting epithelial cells that have been shed from the lining of the gland and white blood cells that have entered the mammary gland in response to injury or infection. SCC consists of 75% leucocytes (neutrophils, macrophages, erythrocytes) and 25% epithelial cells.</p>
+                    <p className="py-3">For healthy udder, SCC is less than 1 Lakh. More than that, it indicates infection. High infection and thus SCC of milk increases the risk of spread of diseases such as tuberculosis, sore throat, Q-fever, brucellosis, and leptospirosis. The endotoxins produced by pathogenic bacteria can cause poisoning cases in humans when transferred through milk. These also produce a variety of inflammatory mediators such as cytokines and chemokine.</p>
+                    <p>Organic milk from the European Union, especially the Alpine region (Germany, Austria, and Switzerland) has a low SCC (1,50,000 to 4,00,000) as compared to milk from other countries where the SCC levels are 7,50,000 or more.</p>
+                </div>
+            )
+        },
+        {
+            question: "What are artificial growth hormones?",
+            answer: "rBGH and rBST are synthetic (man-made) hormones that are marketed to increase milk production in cows. These hormones stimulate the cow’s milk production by increasing levels of IGF-1. Due to the increased IGF-1 levels in milk, the following health concerns arise such as acne, endocrine disorders (PCOS/PCOD), obesity, cancer, cardiovascular diseases, neurodegenerative diseases, allergies, and autoimmune disorders."
+        },
+        {
+            question: "Does BioAlpine’s Organic whey protein contain additives?",
+            answer: "BioAlpine’s Organic whey protein contains 100% organic ingredients with the highest quality parameters and does not contain anything that is not needed by your body. Unlike other whey proteins in the market, we stand apart for not using any artificial or even natural colors, flavours, sweeteners, thickeners, anti-caking agents, acidity regulators, emulsifiers, and digestive enzymes."
+        },
+        {
+            question: "Does BioAlpine’s Organic whey protein contain allergens?",
+            answer: "Since whey proteins are made from cow’s milk, they will come under the category of allergens. The major allergens present in all the variants of BioAlpine’s Organic whey protein are milk and lactose. In addition to this, our Italian Hazelnut Chocolate contains hazelnut powder which also comes under the category of allergen. The three major allergens – milk, lactose, and nuts are specified on the label under the ‘allergen statement’ heading followed by the word ‘contains’."
+        },
+        {
+            question: "Does BioAlpine’s Organic whey protein contain added sugars?",
+            answer: "BioAlpine’s Organic whey protein has a maximum of 11 grams of total carbohydrates which 100% constitutes the milk sugar, lactose which is naturally present in milk. So, it contains zero added sugars in the form of sucrose or cane sugar."
+        },
+        {
+            question: "Is BioAlpine’s Organic whey protein safe for diabetic people?",
+            answer: "BioAlpine’s Organic whey protein contains zero added sugar in the form of sucrose or cane sugar which generally spikes the blood glucose levels and is not good for diabetic people. However, our products contain lactose which is a disaccharide compound and has a low glycemic index and hence completely safe to be consumed by diabetic people."
+        },
+        {
+            question: "What sets BioAlpine’s Organic whey protein apart from the competition?",
+            answer: (
+                <div>
+                    <p>Many factors set us apart from the competition but the most unique point would be the use of <span className="font-semibold">organic flavours</span>, organic freeze-dried fruit powders and coffee, and organic cocoa powder to bring out the taste as close to the real food as possible while maintaining the protein content of the product. Since all flavours are not created equal, they range from artificial to natural to organic. Our organic flavours are extracted from real foods such as organic vanilla pods, cocoa beans, strawberries, blueberries, coconut, wild berries, and mango without the use of GMOs, and harsh chemicals and are vegan. In addition to this, we only use organic 100% freeze-dried fruit powders without any base material such as silica, generally used in spray-dried fruit powders, which are processed at lower temperatures to protect the nutritional, bioactive, and taste profile of the real fruit.</p>
+                </div>
+            )
+        },
+        {
+            question: "How does BioAlpine’s Organic whey protein help in muscle-building and prevent sarcopenia?",
+            answer: "Protein is made up of several single units known as amino acids. When protein is ingested, it is broken down into individual units of amino acids which are collected in the amino acid pool. From the amino acid pool, the amino acids are again taken into the ribosomes where new chains of proteins are formed that are used to build new muscle which is bigger and stronger. The whey proteins contain an amino acid, leucine, which triggers muscle protein synthesis through mTOR. Protein also stimulates the release of IGF-1 and growth hormone which are the major anabolic hormones leading to muscle gain."
+        },
+        {
+            question: "How does BioAlpine’s Organic whey protein help to burn fat?",
+            answer: "Whey protein helps to burn fat by several mechanisms: It helps to build lean muscle mass which increases the BMR and burns fat as the muscle cells contain mitochondria and while producing energy it burns calories. With more muscle, the body burns more calories even at rest so BMR goes high. When we ingest protein, the body burns 25-30% calories to digest and absorb which is much higher than that of carbohydrates (10-15%) and fat (0-5%). Protein has a thermogenic effect which again leads to increased BMR and fat burn. Protein also suppresses the hunger hormone, ghrelin, which leads to a decreased appetite and lesser consumption of overall calories. This leads to improved weight management."
+        },
+        {
+            question: "How does BioAlpine’s Organic whey protein support bone health?",
+            answer: "As opposed to the common myth that taking more protein weakens your bones. It helps in bone strengthening and increasing bone density. This is because proteins make up 1/3 of your bone mass (the amount of protein your bones contain) and 1⁄2 of the bone volume (the amount of space protein takes). During bone remodeling, the protein is continuously made and broken down. This is why you need daily protein to maintain the bone density to make up for the protein that is degraded daily. Also, the bones contain an extracellular bone matrix made up of collagen which is a protein. Protein stimulates the release of IGF-1 which supports bone growth. Together with calcium, protein improves bone mineral density."
+        },
+        {
+            question: "How does BioAlpine’s Organic whey protein help in recovery?",
+            answer: "Recovery is the most important aspect for an athlete or a competing bodybuilder as it allows them to compete at the highest level and gives them an edge over the competition. Protein helps to recover the damaged muscle fibers after a hard workout session. After the workout, the muscle fibers develop small cracks, and also there is an accumulation of lactic acid in the muscles due to prolonged physical activity and lack of oxygen. This causes the body to go into a catabolic stage where tissues are continuously undergoing breakage. To stop the catabolic state and move it into an anabolic state, you require protein. The amino acids in whey protein help in the recovery of the cracks and the amino acid glutamine helps to buffer the lactic acid in the muscles thereby reducing cramps. So, you can hit the gym sooner!"
+        },
+        {
+            question: "How much protein can be consumed per day?",
+            answer: "The protein requirement varies according to the body weight and activity levels. For sedentary adults, the protein requirement is 0.8-1g per Kg body weight per day. For bodybuilders and training athletes, the protein requirement is 1-1.5g per Kg body weight per day."
+        },
+        {
+            question: "How much protein can be consumed per serving?",
+            answer: "Our bodies can absorb a maximum of 30g of protein at one time and any extra protein will be oxidized and removed from the body by the kidneys. Also, studies have shown that on increasing the protein to 40 g and 60 g per serving, the rate of muscle protein synthesis remained the same. So, divide your total protein requirement into 5-6 meals to use its full potential, and consuming 100g of protein at once will only be a waste of money. It is recommended to consume a total of 2-3 servings of protein daily with 30g of protein per serving."
+        },
+        {
+            question: "What is the best time to take BioAlpine’s Organic whey protein?",
+            answer: "The best time to take protein is after the workout (post-workout) when your body is in a catabolic stage from the hard session of strength training. You also need to take protein before sleeping as during sleep the body builds muscle so to supply a steady chain of amino acids, protein in the dinner is important. However, it can also be consumed at any time of the day in combination with your meals."
+        }, {
+            question: "How to take BioAlpine’s Organic whey protein?",
+            answer: "Take 30g of BioAlpine’s Organic whey protein and mix it in 200 ml of water or organic milk or any liquid of your choice and shake it in a shaker bottle vigorously for 15-20 seconds. For the best taste, drink it cold and within 30-60 seconds of mixing. This is the easiest and the most common way of consuming the product. However, the versatile nature of our product allows you to consume it in combination with other recipes such as cookies, cakes, muffins, pancakes, breads, smoothies, ice-creams, protein bars, breakfast bowls, and also juices. Our protein is quite flexible with baking and even freezing techniques. For the exact recipes, please visit our ‘Recipes’ page."
+        }, {
+            question: "Who can use BioAlpine’s Organic whey protein?",
+            answer: (
+                <div>
+                    <p>Protein is a fundamental element of any athlete or training enthusiast’s nutritional protocol. Put simply, protein is essential for the growth and repair of all cells, including muscle cells, and it is, therefore, necessary to experience training adaptations. However, if you are not a gym enthusiast or do not want to build a big and muscular body, you still need protein in your diet. So, whether you are a hard-core gym freak, just a fitness lover, a homemaker, a CEO who hardly gets time to go to the gym or a growing teen, our product can be consumed by a wide variety of consumers right from a 2-year-old kid to an 80-year-old adult. To find your perfect flavour, consider your personal preferences.</p>
+                    <p>Our product comes in 11 delightful options, ranging from the sweet and gentle essence of vanilla and coconut to the vibrant and fresh notes of berries and tropical fruits. You can also enjoy the invigorating taste of 100% Arabica coffee or indulge in the rich, chocolatey flavour of cocoa beans. Explore and discover your favourite!</p>
+                </div>
+            )
+        },
+        {
+            question: "Is organic whey protein worth the money?",
+            answer: "After thoroughly examining the drawbacks of conventional protein and the myriad benefits of organic proteins, it is quite evident that choosing organic is worth your money. The satisfaction that comes from knowing you are consuming not only a cleaner and more natural product but also rich in nutrients and free from harmful chemicals makes the extra cost worthwhile. As someone rightly stated, ‘Investing in your health now will save you from spending on healthcare later’."
+        },
     ];
 
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
-            <div className="abc">
+            <div>
                 {/* Hero Section */}
                 <div className="bg-gray-50 py-8 md:py-16 lg:py-24">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,58 +169,65 @@ function Home() {
                                         Der Bioalpine-Unterschied
                                     </h1>
                                     <p className="text-base sm:text-lg text-gray-600 max-w-xl">
-                                        Umgeben von hohen Bergen, kristallklaren Seen, Flüssen und frischer, sauberer Luft grasen Kühe auf saftigen Almenwiesen inmitten von Hunderten verschiedener Kräuter und Gräser.
+                                        Umgeben von hohen Bergen, kristallklaren Seen, Flüssen und frischer, sauberer Luft grasen Kühe auf saftigen Almenwiesen inmitten von Hunderten verschiedener Kräuter und Gräser, die anderswo nur selten zu finden sind. Dies ist ein hervorragendes Futter für gesunde Kühe und die Grundlage für die außergewöhnliche Qualität und den legendären Geschmack unserer Molkenproteine.
                                     </p>
                                     <div className="flex flex-wrap gap-4">
                                         <button className="bg-[#ec4755] hover:bg-[#f27c86] text-white px-6 sm:px-8 py-3 rounded-md transition-colors flex items-center gap-2 text-sm sm:text-base">
-                                            Get Started
+                                            Mehr erfahren
                                             <MdOutlineArrowRightAlt className="text-xl" />
-                                        </button>
-                                        <button className="text-[#b91c1c] font-semibold px-6 sm:px-8 py-3 rounded-full transition-colors text-sm sm:text-base">
-                                            Email us
                                         </button>
                                     </div>
                                 </div>
 
                                 {/* Right Image */}
-                                <div className="relative mt-8 lg:mt-0">
-                                    <img
-                                        src={Bio_Alpine}
-                                        alt="BioAlpine"
-                                        className="rounded-2xl shadow-xl w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[36rem] object-cover"
-                                    />
+                                <div className="relative mt-8 lg:mt-0 overflow-hidden">
+                                    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[36rem] transform -skew-x-12 translate-x-16">
+                                        <div className="transform skew-x-12 -translate-x-16 h-full">
+                                            <img
+                                                src={Bio_Alpine}
+                                                alt="BioAlpine"
+                                                className="w-full h-full object-cover rounded-2xl shadow-xl"
+                                            />
+                                            {/* Optional overlay gradient */}
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-[#ec475522] to-transparent rounded-2xl"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <img src={waves} alt="Not Found" className="w-full" />
+                <div className="flex flex-col justify-center">
+                    <p className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-gray-800 mt-12">
+                        Steigen Sie auf Bio um.
+                    </p>
+                    <p className="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto px-4 my-4">
+                        Umgeben von hohen Bergen, kristallklaren Seen, Flüssen und frischer, sauberer Luft grasen Kühe auf saftigen Almenwiesen inmitten von Hunderten verschiedener Kräuter und Gräser, die anderswo nur selten zu finden sind. Dies ist ein hervorragendes Futter für gesunde Kühe und die Grundlage für die außergewöhnliche Qualität und den legendären Geschmack unserer Molkenproteine.
+                    </p>
+                    <div className="flex justify-center items-center">
+                        <div className="bg-[#ec4755] flex justify-center items-center text-white font-semibold rounded-full px-4 sm:px-6 py-2 sm:py-3 space-x-2 my-4 sm:my-6 hover:bg-[#f27c86] transition-colors">
+                            <button className="text-sm sm:text-base">MEHR ERFAHREN</button>
+                            <MdOutlineArrowRightAlt className="text-xl sm:text-2xl" />
+                        </div>
+                    </div>
+                </div>
 
                 <div>
                     {/* Features Section */}
-                    <div className="py-12 md:py-16 lg:py-24">
+                    <div className="py-12 md:py-16 lg:py-2">
                         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                            <div className="text-center mb-12 md:mb-16">
-                                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                                    Steigen <span className="text-[#ec4755] relative">
-                                        Sie auf Bio
-                                        <span className="absolute bottom-1 left-0 w-full h-1 bg-[#ec4755] opacity-20"></span>
-                                    </span> um.
-                                </h2>
-                            </div>
 
-                            {/* Features Grid */}
                             <div className="max-w-6xl mx-auto">
-                                {/* Feature 1 */}
                                 <div className="mt-16 md:mt-28 mb-16 md:mb-32">
                                     <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 text-start">
-                                        <div className="space-y-4 md:space-y-6 lg:pr-8">
+                                        <div className="space-y-4 md:space-y-4 lg:pr-8">
                                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
-                                                A plug n play template
+                                                Gesundheit zuerst
                                             </h3>
+                                            <p className="text-gray-600 leading-relaxed text-base sm:text-lg">Hören Sie auf, Ihren Körper zu vergiften, denn er ist der einzige Ort, an dem Sie leben können.</p>
                                             <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                                                Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live!
+                                                Keine giftigen Schwermetalle, GVO, exogenen Hormone, Antibiotika, synthetischen Süßstoffe, Aromen, Farbstoffe und Konservierungsmittel, die mit zahlreichen Krankheiten in Verbindung gebracht werden, darunter (aber nicht beschränkt auf) Magen-Darm- und Nierenfunktionsstörungen, Wachstumsstörungen, Diabetes, Krebs, Herz-Kreislauf-Erkrankungen, Erkrankungen des Nervensystems, Hautläsionen, Gefäßschäden, Funktionsstörungen des Immunsystems und Geburtsfehler.
                                             </p>
                                         </div>
                                         <div className="relative mt-6 lg:mt-0">
@@ -147,7 +240,6 @@ function Home() {
                                     </div>
                                 </div>
 
-                                {/* Feature 2 */}
                                 <div>
                                     <div className="grid lg:grid-cols-2 gap-16 text-start">
                                         <div className="relative order-2 lg:order-1">
@@ -157,105 +249,56 @@ function Home() {
                                                 className="w-full max-w-lg mx-auto rounded-lg shadow-lg"
                                             />
                                         </div>
-                                        <div className="space-y-6 lg:pl-8 order-1 lg:order-2">
+                                        <div className="space-y-4 lg:pl-8 order-1 lg:order-2">
                                             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                                                Make it your own!
+                                                Erleben Sie Perfektion
                                             </h3>
+                                            <p className="text-gray-600 leading-relaxed text-base sm:text-lg">Wann traf Totalität zuletzt auf Wirksamkeit und Reinheit?</p>
                                             <p className="text-gray-600 leading-relaxed">
-                                                Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!
+                                                Mittels Niedertemperatur-Mikrofiltration und Ultrafiltration wird hochwertiges organisches Molkenprotein in voll funktionsfähiger Form isoliert, das auf natürliche Weise ein vollständiges Profil an essentiellen Aminosäuren und wichtigen Fraktionen wie β-Lactoglobulin (β-Lg), α-Lactalbumin (α-La), Immunglobulinen (Igs), Lactoferrin (LF), Rinderserumalbumin (BSA) und Lactoperoxidase (LP) in perfekten Verhältnissen enthält, um Ihr Muskelwachstum, Ihren Fettabbau oder einfach eine gesündere Lebensweise zu unterstützen.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <img src={waves} alt="Not Found" />
-
-                <div className="bg-gray-50 py-16 md:py-16">
-                    <div className="container mx-auto px-4">
-                        <div className="max-w-6xl mx-auto">
-                            {/* Section Header */}
-                            <div className="text-center mb-16">
-                                <p className="text-[#ec4755] font-semibold mb-4">LATEST & GREATEST</p>
-                                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                    All the best technologies out there!
-                                </h2>
-                                <p className="text-gray-600 max-w-3xl mx-auto">
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </p>
-                            </div>
-
-                            {/* Technology Cards Grid */}
-                            <div className="grid md:grid-cols-2 gap-8 mt-16">
-                                {/* React.js Card */}
-                                <div className="flex gap-6 items-start">
-                                    <div className="flex-shrink-0">
-                                        <div className="w-12 h-12 rounded-lg border-2 border-[#ec4755] flex items-center justify-center">
-                                            <svg className="w-6 h-6 text-[#ec4755]" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" />
-                                                <path d="M12 22.5c-1.9 0-3.6-.3-4.9-.9-1.5-.7-2.6-1.7-3.2-2.9-.6-1.2-.7-2.5-.3-3.7.4-1.2 1.3-2.4 2.6-3.4-.3-.5-.5-.9-.7-1.4-.4-1.2-.5-2.4-.1-3.5.4-1.1 1.2-2 2.4-2.6 2.4-1.2 6.5-.9 10.3.8-.3.5-.6 1-.8 1.5-3.2-1.4-6.5-1.7-8.3-.8-.8.4-1.3.9-1.5 1.5-.2.7-.2 1.4.1 2.2.1.4.3.7.5 1.1 1.8-1.2 4-2.2 6.3-2.7 2.3-.5 4.5-.6 6.3-.1 1.5.4 2.6 1.2 3.2 2.3.6 1.2.7 2.5.3 3.7-.4 1.2-1.3 2.4-2.6 3.4.3.5.5.9.7 1.4.4 1.2.5 2.4.1 3.5-.4 1.1-1.2 2-2.4 2.6-1.2.6-2.7.9-4.4.9Zm-7-6.4c-.3.9-.2 1.7.2 2.5.5.8 1.3 1.5 2.4 2 2.4 1.1 6.5.8 10.3-.8.8-.4 1.3-.9 1.5-1.5.2-.7.2-1.4-.1-2.2-.1-.4-.3-.7-.5-1.1-1.8 1.2-4 2.2-6.3 2.7-2.3.5-4.5.6-6.3.1-.4-.1-.8-.3-1.2-.5Zm14-6.2c.3-.9.2-1.7-.2-2.5-.5-.8-1.3-1.5-2.4-2-1.8-.8-4.3-.9-6.8-.4-2 .5-3.9 1.3-5.4 2.2 1.1.9 2.5 1.8 4.1 2.4 2.3.9 4.6 1.2 6.5.9.4-.1.8-.3 1.2-.5.9.4 1.8.6 2.7.8.1 0 .2-.3.3-.9.9Z" />
-                                            </svg>
+                                <div className="mt-16 md:mt-28 mb-16 md:mb-32">
+                                    <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 text-start">
+                                        <div className="space-y-4 md:space-y-4 lg:pr-8">
+                                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+                                                Köstliche Bio-Aromen
+                                            </h3>
+                                            <p className="text-gray-600 leading-relaxed text-base sm:text-lg">Die köstlichste Geschmacksvielfalt aller Bio-Molkeproteine – Punkt!</p>
+                                            <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
+                                                BioAlpine® lädt Sie zu einem ganz eigenen Geschmackserlebnis ein, indem es das jahrhundertealte Geschmackserbe des biologischen Kaffees, Kakaos, der Vanille und der Superfrüchte dieser Welt nachbildet.
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div className="text-start">
-                                        <h3 className="text-xl font-bold mb-2">React.js</h3>
-                                        <p className="text-gray-600">
-                                            React is a free and open-source front-end JavaScript library for building user interfaces or UI components.
-                                        </p>
+                                        <div className="relative mt-6 lg:mt-0">
+                                            <img
+                                                src={WebBlock3}
+                                                alt="Feature 1"
+                                                className="w-full max-w-lg mx-auto rounded-lg shadow-lg"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
-                                {/* Tailwind Card */}
-                                <div className="flex gap-6 items-start">
-                                    <div className="flex-shrink-0">
-                                        <div className="w-12 h-12 rounded-lg border-2 border-[#ec4755] flex items-center justify-center">
-                                            <svg className="w-6 h-6 text-[#ec4755]" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M12 6C9.33 6 7.67 7.33 7 10C8 8.67 9.17 8.17 10.5 8.5C11.26 8.69 11.81 9.24 12.41 9.85C13.39 10.85 14.5 12 17 12C19.67 12 21.33 10.67 22 8C21 9.33 19.83 9.83 18.5 9.5C17.74 9.31 17.19 8.76 16.59 8.15C15.61 7.15 14.5 6 12 6M7 12C4.33 12 2.67 13.33 2 16C3 14.67 4.17 14.17 5.5 14.5C6.26 14.69 6.81 15.24 7.41 15.85C8.39 16.85 9.5 18 12 18C14.67 18 16.33 16.67 17 14C16 15.33 14.83 15.83 13.5 15.5C12.74 15.31 12.19 14.76 11.59 14.15C10.61 13.15 9.5 12 7 12Z" />
-                                            </svg>
+                                <div>
+                                    <div className="grid lg:grid-cols-2 gap-16 text-start">
+                                        <div className="relative order-2 lg:order-1">
+                                            <img
+                                                src={WebBlock4}
+                                                alt="Feature 2"
+                                                className="w-full max-w-lg mx-auto rounded-lg shadow-lg"
+                                            />
                                         </div>
-                                    </div>
-                                    <div className="text-start">
-                                        <h3 className="text-xl font-bold mb-2">Tailwind</h3>
-                                        <p className="text-gray-600">
-                                            Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* Next.js Card */}
-                                <div className="flex gap-6 items-start">
-                                    <div className="flex-shrink-0">
-                                        <div className="w-12 h-12 rounded-lg border-2 border-[#ec4755] flex items-center justify-center">
-                                            <svg className="w-6 h-6 text-[#ec4755]" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z" />
-                                            </svg>
+                                        <div className="space-y-4 lg:pl-8 order-1 lg:order-2">
+                                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                                                Funktionale Dominanz
+                                            </h3>
+                                            <p className="text-gray-600 leading-relaxed text-base sm:text-lg">Wenn Nahrung Medizin ist, ist dies die einzige Molke, die Sie jemals brauchen werden!</p>
+                                            <p className="text-gray-600 leading-relaxed">
+                                                Durch die Zugabe von Bio-Kaffee, Kakao, Vanilleextrakten und gefriergetrockneten Fruchtpulvern als Geschmacksstoffe sind unsere Proteinpulver auf natürliche Weise mit den wirksamsten der Menschheit bekannten Phytochemikalien und Antioxidantien angereichert, sodass Sie Ihre Gesundheit voll und ganz kontrollieren können.                                            </p>
                                         </div>
-                                    </div>
-                                    <div className="text-start">
-                                        <h3 className="text-xl font-bold mb-2">Next.js</h3>
-                                        <p className="text-gray-600">
-                                            Next.js is a framework for server-rendered React applications using Next.js.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* TypeScript Card */}
-                                <div className="flex gap-6 items-start">
-                                    <div className="flex-shrink-0">
-                                        <div className="w-12 h-12 rounded-lg border-2 border-[#ec4755] flex items-center justify-center">
-                                            <svg className="w-6 h-6 text-[#ec4755]" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M3,3H21V21H3V3M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86M13,11.25H8V12.75H9.5V20H11.25V12.75H13V11.25Z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className="text-start">
-                                        <h3 className="text-xl font-bold mb-2">Typescript</h3>
-                                        <p className="text-gray-600">
-                                            TypeScript is a programming language developed and maintained by Microsoft.
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -263,83 +306,31 @@ function Home() {
                     </div>
                 </div>
 
-                <img src={waves1} alt="Not Found" />
-
-                <div className="xyz bg-white py-16 md:py-16">
-                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="max-w-6xl mx-auto">
-                            {/* Section Header */}
-                            <div className="text-center mb-16">
-                                <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                                    <span className="text-[#ec4755] relative">
-                                        Pricing
-                                        <span className="absolute bottom-1 left-0 w-full h-1 bg-[#ec4755] opacity-20"></span>
+                {/* Accordion Section  */}
+                <div className="w-full max-w-6xl mx-auto mt-12 sm:mt-24 px-4">
+                    <div className="space-y-3 sm:space-y-4 text-[#666]">
+                        {accordionData.map((item, index) => (
+                            <div key={index} className="bg-[#f4f4f4] border border-gray-200 rounded-lg my-7">
+                                <button
+                                    className="w-full p-3 sm:p-4 text-left flex justify-between items-center"
+                                    onClick={() => toggleAccordion(index)}
+                                >
+                                    <span className="text-base sm:text-lg font-medium font-bold pr-4">{item.question}</span>
+                                    <span className={`transform transition-transform duration-200 w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center border-2 border-gray-200 rounded-full ${openAccordion === index ? 'rotate-180' : ''
+                                        }`}>
+                                        <MdKeyboardArrowLeft className="rotate-90 text-lg sm:text-xl text-gray-600" />
                                     </span>
-                                </h2>
+                                </button>
+                                {openAccordion === index && (
+                                    <div className="p-3 sm:p-4 border-t border-gray-200 text-start">
+                                        <p className="text-sm sm:text-base text-gray-600">{item.answer}</p>
+                                    </div>
+                                )}
                             </div>
-
-                            {/* Pricing Cards */}
-                            <div className="grid md:grid-cols-3 gap-8">
-                                {/* Free Plan */}
-                                <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
-                                    <h3 className="text-2xl font-bold text-gray-800 mb-6">Free</h3>
-                                    <div className="space-y-4 mb-8">
-                                        <div className="text-gray-600">1 user</div>
-                                        <div className="text-gray-600">Basic Support</div>
-                                        <div className="text-gray-600">1 GB of storage</div>
-                                        <div className="text-gray-600">Email support</div>
-                                    </div>
-                                    <div className="flex items-end mb-8">
-                                        <span className="text-4xl font-bold text-gray-800">$0</span>
-                                        <span className="text-gray-600 ml-2 mb-1">for one user</span>
-                                    </div>
-                                    <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors">
-                                        Get Started
-                                    </button>
-                                </div>
-
-                                {/* Pro Plan */}
-                                <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow relative">
-                                    <div className="absolute -top-4 left-0 right-0 h-1 bg-[#ec4755]"></div>
-                                    <h3 className="text-2xl font-bold text-[#ec4755] mb-6">Pro</h3>
-                                    <div className="space-y-4 mb-8">
-                                        <div className="text-[#ec4755]">5 users</div>
-                                        <div className="text-[#ec4755]">Priority Support</div>
-                                        <div className="text-[#ec4755]">10 GB of storage</div>
-                                        <div className="text-[#ec4755]">Phone and Email support</div>
-                                    </div>
-                                    <div className="flex items-end mb-8">
-                                        <span className="text-4xl font-bold text-[#ec4755]">$15</span>
-                                        <span className="text-gray-600 ml-2 mb-1">per user</span>
-                                    </div>
-                                    <button className="w-full bg-[#ec4755] hover:bg-[#f27c86] text-white font-semibold py-3 px-6 rounded-lg transition-colors">
-                                        Get Started
-                                    </button>
-                                </div>
-
-                                {/* Enterprise Plan */}
-                                <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
-                                    <h3 className="text-2xl font-bold text-gray-800 mb-6">Enterprise</h3>
-                                    <div className="space-y-4 mb-8">
-                                        <div className="text-gray-600">50 users</div>
-                                        <div className="text-gray-600">24/7 Support</div>
-                                        <div className="text-gray-600">100 GB of storage</div>
-                                        <div className="text-gray-600">Phone and Email support</div>
-                                    </div>
-                                    <div className="flex items-end mb-8">
-                                        <span className="text-4xl font-bold text-gray-800">$29</span>
-                                        <span className="text-gray-600 ml-2 mb-1">per user</span>
-                                    </div>
-                                    <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors">
-                                        Get Started
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
 
-                <img src={waves} alt="Not Found" />
             </div>
             <Footer />
         </div>
