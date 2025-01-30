@@ -7,7 +7,7 @@ function Home() {
     return (
         <div>
             <Header />
-            <h1>Hello Home</h1>
+            <p className="bg-red-500 text-6xl">Hello Home</p>
             <Footer />
         </div>
     )
