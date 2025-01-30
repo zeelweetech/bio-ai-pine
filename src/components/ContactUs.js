@@ -5,7 +5,7 @@ function ContactUs() {
     return (
         <div>
             <Header />
-            <h1>Hello ContactUs</h1>
+            {/* <h1>Hello ContactUs</h1> */}
             <Footer />
         </div>
     )

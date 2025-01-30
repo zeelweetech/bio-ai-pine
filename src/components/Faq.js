@@ -5,7 +5,7 @@ function Faq() {
     return (
         <div>
             <Header />
-            <h1>Hello Faq</h1>
+            {/* <h1>Hello Faq</h1> */}
             <Footer />
         </div>
     )
