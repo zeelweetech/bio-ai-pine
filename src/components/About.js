@@ -5,7 +5,7 @@ function About() {
     return (
         <div>
             <Header />
-            <h1>Hello About</h1>
+            {/* <h1>Hello About</h1> */}
             <Footer />
         </div>
     )
