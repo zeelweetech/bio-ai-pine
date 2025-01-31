@@ -91,19 +91,19 @@ function Product() {
     return (
         <div>
             <Header />
-            <div className="max-w-7xl mx-auto p-4">
+            <div className="max-w-8xl mx-auto p-4">
                 <h2 className="text-2xl font-bold text-center mb-6 text-[#ec4755]">Unsere Produkte</h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {products.map((product) => (
                         <div key={product.id} className="bg-white shadow-lg rounded-lg p-4 hover:shadow-2xl transition-shadow">
-                            <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-md" />
+                            <img src={product.image} alt={product.name} className="w-full h-90 object-cover rounded-md" />
                             <h3 className="text-lg font-semibold mt-3">{product.name}</h3>
                             <p className="text-gray-500 text-sm">{product.description}</p>
-                            <span className="text-lg font-bold text-red-500">{product.price}</span>
+                            {/* <span className="text-lg font-bold text-red-500">{product.price}</span>
                             <button className="mt-3 w-full bg-[#ec4755] text-white py-2 rounded-lg hover:bg-red-400">
                                 Add to Cart
-                            </button>
+                            </button> */}
                         </div>
                     ))}
                 </div>

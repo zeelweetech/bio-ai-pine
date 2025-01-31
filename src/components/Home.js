@@ -7,6 +7,41 @@ import WebBlock1 from "../assets/img/WebBlock1.jpg"
 import WebBlock2 from "../assets/img/WebBlock2.jpg"
 import WebBlock3 from "../assets/img/WebBlock3.jpg"
 import WebBlock4 from "../assets/img/WebBlock4.jpg"
+import swiss_white_chocolate from "../assets/images/swiss_white_chocolate.jpeg"
+import alpine_milk_chocolate1 from "../assets/images/alpine_milk_chocolate1.jpeg"
+import bourbon_vanilla from "../assets/images/bourbon_vanilla.jpeg"
+import ethiopian_coffee1 from "../assets/images/ethiopian_coffee1.jpeg"
+
+const products = [
+    {
+        id: 1,
+        name: "Swiss White Chocolate",
+        price: "$25",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        image: swiss_white_chocolate,
+    },
+    {
+        id: 2,
+        name: "Alpine Milk Chocolate",
+        price: "$30",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        image: alpine_milk_chocolate1,
+    },
+    {
+        id: 3,
+        name: "Bourbon Vanilla",
+        price: "$120",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        image: bourbon_vanilla,
+    },
+    {
+        id: 4,
+        name: "Ethiopian Coffee",
+        price: "$80",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        image: ethiopian_coffee1,
+    },
+]
 
 function Home() {
     const [openAccordion, setOpenAccordion] = useState(null);
@@ -363,6 +398,25 @@ function Home() {
                     </div>
                 </div>
 
+                <div className="max-w-8xl mx-auto p-4">
+                    <h2 className="text-3xl font-bold text-center mb-6 text-[#ec4755]">Unsere Produkte</h2>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-4 lg:grid-cols-4 gap-6">
+                        {products.map((product) => (
+                            <div key={product.id} className="bg-white shadow-lg rounded-lg p-4 hover:shadow-2xl transition-shadow">
+                                <img src={product.image} alt={product.name} className="w-full h-90 object-cover rounded-md" />
+                                <h3 className="text-lg font-semibold mt-3">{product.name}</h3>
+                                <p className="text-gray-500 text-sm">{product.description}</p>
+                                {/* <span className="text-lg font-bold text-red-500">{product.price}</span>
+                            <button className="mt-3 w-full bg-[#ec4755] text-white py-2 rounded-lg hover:bg-red-400">
+                                Add to Cart
+                            </button> */}
+                            </div>
+                        ))}
+                    </div>
+                    <span className="text-lg font-bold text-center mb-6 text-[#ec4755]">Besuchen Sie unsere Website für weitere Produktjobs</span>
+                </div>
+
                 {/* Accordion Section */}
                 <div className="w-full max-w-6xl mx-auto mt-12 sm:mt-24 px-4">
                     <div className="space-y-3 sm:space-y-4 text-[#666]">
@@ -375,16 +429,14 @@ function Home() {
                                     <span className="text-base sm:text-lg font-medium font-bold pr-4">
                                         {item.question}
                                     </span>
-                                    <span className={`transform transition-transform duration-300 w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center border-2 border-gray-200 rounded-full ${
-                                        openAccordion === index ? 'rotate-180' : ''
-                                    }`}>
+                                    <span className={`transform transition-transform duration-300 w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center border-2 border-gray-200 rounded-full ${openAccordion === index ? 'rotate-180' : ''
+                                        }`}>
                                         <MdKeyboardArrowLeft className="rotate-90 text-lg sm:text-xl text-gray-600" />
                                     </span>
                                 </button>
-                                <div 
-                                    className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                                        openAccordion === index ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
-                                    }`}
+                                <div
+                                    className={`transition-all duration-300 ease-in-out overflow-hidden ${openAccordion === index ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                                        }`}
                                 >
                                     <div className="p-3 sm:p-4 border-t border-gray-200 text-start">
                                         <p className="text-sm sm:text-base text-gray-600">{item.answer}</p>

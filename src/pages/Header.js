@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <header>
-            <div className="top-bar text-white px-12 py-2 flex justify-center items-center text-sm">
+            {/* <div className="top-bar text-white px-12 py-2 flex justify-center items-center text-sm">
                 <div className="contact-info flex gap-1 xl:flex-row lg:flex-row md:flex-col max-sm:flex-col sm:flex-col text-center max-sm:text-center md:text-left">
                     <a href="tel:+4915217208524" className="text-black">
                         WhatsApp +49 1521 7208524
@@ -19,14 +19,14 @@ function Header() {
                         info@bioalpine.de
                     </a>
                 </div>
-            </div>
-            <nav className="bg-[#f4f4f4] border-gray-200">
-                <div className="nav-content max-w-screen-lg h-10 flex items-center item-center flex justify-center px-5 relative">
-                    <div className="hidden lg:flex items-center gap-2">
+            </div> */}
+            <nav className="bg-gray-50">
+                <div className="nav-content h-30 flex item-center flex justify-center px-5 relative">
+                    <div className="hidden lg:flex items-center gap-2 flex justyfy-center items-center">
                         <a href="/" className="logo mx-10">
-                            <img src={logo} alt="BioAlpine" className="h-20 w-48" />
+                            <img src={logo} alt="BioAlpine" className="h-40 w-60" />
                         </a>
-                        <a
+                        {/* <a
                             href="/"
                             className="nav-link text-gray-800 text-base font-medium transition-colors duration-300 hover:bg-orange-600 px-1.5 hover:text-white py-1 active:text-orange-600"
                         >
@@ -55,18 +55,18 @@ function Header() {
                             className="nav-link text-gray-800 text-base font-medium transition-colors duration-300 hover:bg-orange-600 px-1.5 hover:text-white py-1 active:text-orange-600"
                         >
                             Product
-                        </a>
+                        </a> */}
                     </div>
                     <div className="flex justyfy-around items-center">
                         <a href="/" className="logo mx-10  lg:hidden">
                             <img src={logo} alt="BioAlpine" className="h-20 w-48" />
                         </a>
-                        <button
+                        {/* <button
                             onClick={toggleMenu}
                             className="lg:hidden text-2xl flex-col text-gray-800"
                         >
                             ☰
-                        </button>
+                        </button> */}
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@ function Header() {
                         } bg-white py-4`}
                 >
                     <div></div>
-                    <a
+                    {/* <a
                         href="/"
                         className="block text-gray-500 text-base font-medium duration-300 hover:text-black font-semibold py-2 text-start ml-10"
                     >
@@ -104,7 +104,7 @@ function Header() {
                         className="block text-gray-800 text-base font-medium py-2 px-5"
                     >
                         Product
-                    </a>
+                    </a> */}
                 </div >
             </nav >
         </header >
