@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.790020e8.css",
+    "main.js": "/static/js/main.8172ecbc.js",
+    "static/media/honey-spoon.jpg": "/static/media/honey-spoon.1858a7cba059ccb1a872.jpg",
+    "static/media/landscapImage.jpg": "/static/media/landscapImage.8019f18220584453f5ff.jpg",
+    "static/media/Bio-Alpine.jpg": "/static/media/Bio-Alpine.930f32b1985d0d1298b6.jpg",
+    "static/media/lendingcow.jpg": "/static/media/lendingcow.930f32b1985d0d1298b6.jpg",
+    "static/media/coffee.jpg": "/static/media/coffee.ba50850fb395e267e769.jpg",
+    "static/media/ethiopian_coffee.jpeg": "/static/media/ethiopian_coffee.f98d69f49d745442d66e.jpeg",
+    "static/media/manwoman.jpg": "/static/media/manwoman.c875fe48267b89e88473.jpg",
+    "static/media/shake.jpg": "/static/media/shake.b8683fa39fbbc513eb54.jpg",
+    "static/media/alpine_milk_chocolate.jpeg": "/static/media/alpine_milk_chocolate.a905c863747241b433e7.jpeg",
+    "static/media/swiss_white_chocolate.jpeg": "/static/media/swiss_white_chocolate.a1d8c21330cb3f3fdcda.jpeg",
+    "static/media/furnishProtein.jpg": "/static/media/furnishProtein.b35494ee2760b6eea990.jpg",
+    "static/media/doctor.jpg": "/static/media/doctor.0180170669165eadf5a1.jpg",
+    "static/media/wheyProtein.jpeg": "/static/media/wheyProtein.1605c09d51e6cae95f47.jpeg",
+    "static/media/ethiopian_coffee1.jpeg": "/static/media/ethiopian_coffee1.dca20962f4f9d48b3b2e.jpeg",
+    "static/media/bourbon_vanilla.jpeg": "/static/media/bourbon_vanilla.454376f3a8142a2b35b8.jpeg",
+    "static/media/wheyProtein1.jpeg": "/static/media/wheyProtein1.47ba4a13d011b836fbbf.jpeg",
+    "static/media/alpine_milk_chocolate1.jpeg": "/static/media/alpine_milk_chocolate1.914c0f27b52d9da37558.jpeg",
+    "static/media/swiss_white_chocolate1.jpeg": "/static/media/swiss_white_chocolate1.0fdc58c9aba18dc81d0a.jpeg",
+    "static/media/WebBlock4.jpg": "/static/media/WebBlock4.7cbcc1d91a35e8a94e50.jpg",
+    "static/media/logo.png": "/static/media/logo.7d2851f0c042a74db36a.png",
+    "static/media/WebBlock3.jpg": "/static/media/WebBlock3.990e4e6b3d1f39d285bb.jpg",
+    "static/media/WebBlock2.jpg": "/static/media/WebBlock2.e9fa245937adef3d74da.jpg",
+    "static/media/WebBlock1.jpg": "/static/media/WebBlock1.b3fd3a864e39053ca1c3.jpg",
+    "static/media/wild_berries.jpeg": "/static/media/wild_berries.fa175bad7e67a7f1941b.jpeg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.790020e8.css.map": "/static/css/main.790020e8.css.map",
+    "main.8172ecbc.js.map": "/static/js/main.8172ecbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.790020e8.css",
+    "static/js/main.8172ecbc.js"
+  ]
+}
